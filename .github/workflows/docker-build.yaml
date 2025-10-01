@@ -21,3 +21,5 @@ jobs:
       # 3️⃣ Build the Docker image
       - name: Build Docker Image
         run: docker build -t my-html-app:latest .
+      - name: Running a command
+        run: docker ps && docker images && ls && ls -a
